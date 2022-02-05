@@ -17,21 +17,23 @@ function Header() {
     <header className="header">
       <div className="header__top">
         <div className="container">
-          <div className="header__contacts contacts">
-            <ul className="contacts__list">
-              <li className="contacts__item">
-                <img className="contacts__img" src={phoneIcon} alt="phone"  />
-                <span className="contacts__text">+375 29 100 20 30</span>
-              </li>
-              <li className="contacts__item">
-              <img className="contacts__img" src={locIcon} alt="location"  />
-                <span className="contacts__text">Belarus, Gomel, Lange 17</span>
-              </li>
-              <li className="contacts__item">
-              <img className="contacts__img" src={clockIcon} alt="prime time"  />
-                <span className="contacts__text">All week 24/7</span>
-              </li>
-            </ul>
+          <div className="header__top-wrap">
+            <div className="header__contacts">
+              <ul className="contacts__list">
+                <li className="contacts__item">
+                  <img className="contacts__img" src={phoneIcon} alt="phone"  />
+                  <span className="contacts__text">+375 29 100 20 30</span>
+                </li>
+                <li className="contacts__item">
+                <img className="contacts__img" src={locIcon} alt="location"  />
+                  <span className="contacts__text">Belarus, Gomel, Lange 17</span>
+                </li>
+                <li className="contacts__item">
+                <img className="contacts__img" src={clockIcon} alt="prime time"  />
+                  <span className="contacts__text">All week 24/7</span>
+                </li>
+              </ul>
+            </div>
             <div className="header__social social">
               <ul className="social__list">
                 <li className="social__item">
@@ -61,7 +63,7 @@ function Header() {
       </div>
       <div className="header__bottom">
         <div className="container">
-          <div className="header__wrapper">
+          <div className="header__bottom-wrap">
             <div className="header__logo logo">
               <img className="logo__img" src={logoImg} alt="CleverShop"  />
             </div>
