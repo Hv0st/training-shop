@@ -1,0 +1,40 @@
+.features {
+    padding: 35px 0;
+    &__wrapper {
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        
+    }
+
+    &__img {
+
+    }
+
+    &__intro {
+        margin-left: 13px;
+        min-width: 310px;
+
+    }
+
+    &__title {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 13px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+
+    }
+
+}
+

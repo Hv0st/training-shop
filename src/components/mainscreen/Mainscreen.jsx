@@ -1,4 +1,5 @@
 import './_mainsreen.scss';
+import Features from '../features/Features';
 import img from './assets/img/product-img-1.jpg';
 import imgWomen from './assets/img/product-women-img.jpg';
 import imgMen from './assets/img/product-men-img.jpg';
@@ -42,6 +43,7 @@ function Mainscreen() {
                 </div>
             </div>
         </div>
+        <Features />
       </div>
     );
   }
