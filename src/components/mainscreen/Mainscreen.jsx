@@ -12,7 +12,7 @@ function Mainscreen() {
             <div className={s.mainscreenWrapper}>
                 <div className={s.mainscreenImgs}>
                     <div className={s.mainscreenImgWrap}>
-                        <img className={s.mainscreenImg} src={img} alt="Product image"  />
+                        <img className={s.mainscreenImg} src={img} alt="Product"  />
                         <div className={s.bannerBig}>
                             <span className={s.bannerTextGray}>banner</span>
                             <span className={s.bannerTextBig}>your Title text </span>

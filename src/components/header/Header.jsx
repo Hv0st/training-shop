@@ -14,7 +14,7 @@ import cartIcon from './assets/img/cart-icon.svg';
 
 function Header() {
   return (
-    <header className={s.header}>
+    <header className={s.header} data-test-id="header">
       <div className={s.headerTop}>
         <div className={s.container}>
           <div className={s.headerTopWrap}>
@@ -34,6 +34,7 @@ function Header() {
                 </li>
               </ul>
             </div>
+<<<<<<< HEAD
             <div className="header__social social">
               <ul className="social__list">
                 <li className="social__item">
@@ -54,6 +55,28 @@ function Header() {
                 <li className="social__item">
                   <a className="social__link" href='/#'>
                     <img className="social__img" src={pintIcon} alt="pintereset"  />
+=======
+            <div className={s.headerSocial} >
+              <ul className={s.socialList}>
+                <li className={s.socialItem}>
+                  <a className={s.socialLink} href='/#'>
+                    <img className={s.socialImg} src={facebookIcon} alt="facebook"  />
+                  </a>
+                </li>
+                <li className={s.socialItem}>
+                  <a className={s.socialLink} href='/#'>
+                    <img className={s.socialImg} src={twitterIcon} alt="twitter"  />
+                  </a>
+                </li>
+                <li className={s.socialItem}>
+                  <a className={s.socialLink} href='/#'>
+                    <img className={s.socialImg} src={instaIcon} alt="instagram"  />
+                  </a>
+                </li>
+                <li className={s.socialItem}>
+                  <a className={s.socialLink} href='/#'>
+                    <img className={s.socialImg} src={pintIcon} alt="pintereset"  />
+>>>>>>> 458ed6e (add subscribe & fix href)
                   </a>
                 </li>
               </ul>
@@ -67,6 +90,7 @@ function Header() {
             <div className={s.headerLogo} logo>
               <img className={s.logoImg} src={logoImg} alt="CleverShop"  />
             </div>
+<<<<<<< HEAD
             <nav className="header__nav nav">
               <ul className="nav__list">
                 <li className="nav__item">
@@ -103,6 +127,30 @@ function Header() {
                   <a className="nav__link" href="/#" >
                     Contact
                   </a>
+=======
+            <nav className={s.nav}>
+              <ul className={s.navList}>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >About As</a>
+                </li>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >Women</a>
+                </li>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >Men</a>
+                </li>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >Beauty</a>
+                </li>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >Accessories</a>
+                </li>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >Blog</a>
+                </li>
+                <li className={s.navItem}>
+                  <a className={s.navLink} href="/#" >Contact</a>
+>>>>>>> 458ed6e (add subscribe & fix href)
                 </li>
               </ul>
             </nav>

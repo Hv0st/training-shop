@@ -1,0 +1,99 @@
+.subscribe {
+    padding: 60px 0;
+    background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+
+}
+
+.wrapper {
+    padding: 80px 0 90px;
+    position: relative;
+    max-width: 460px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #A0A0A0;
+}
+
+.title {
+    margin-top: 15px;
+    max-width: 280px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    
+}
+
+.titleSpan {
+
+}
+
+.form {
+    position: relative;
+
+}
+
+.form::before {
+    position: absolute;
+    content: "";
+    height: 584px;
+    width: 311px;
+    top: -253px;
+    right: 209px;
+    background: no-repeat url('./assets/img/girl.png')
+    
+}
+
+.form::after {
+    position: absolute;
+    position: absolute;
+    content: "";
+    top: -233px;
+    left:206px;
+    height: 584px;
+    width: 219px;
+    background: no-repeat url('./assets/img/boy.png')
+}
+
+.email {
+    margin-top: 30;
+    width: 340px;
+    min-height: 60px;
+    border: none;
+    background-color: #F8F8F8;
+}
+
+.email::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.btn {
+    margin-top: 24px;
+    width: 340px;
+    min-height: 60px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
