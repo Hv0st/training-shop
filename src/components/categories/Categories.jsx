@@ -1,4 +1,4 @@
-import './_categories.scss';
+import s from './Categories.module.css';
 import productImg1 from './assets/img/products-women-1.jpg'
 import productImg2 from './assets/img/products-women-2.jpg'
 import productImg3 from './assets/img/products-women-3.jpg'
@@ -19,409 +19,409 @@ import productImg16   from './assets/img/products-men-8.jpg'
 function Categories() {
     return (
         <>
-            <section className="categories">
-              <div className="container">
-                  <div className="categories__wrapper">
-                      <div className="categories__top">
-                          <h2 className="categories__title">women's</h2>
-                          <div className="categories__breadcrump breadcrump">
-                              <ul className="breadcrump__list">
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link breadcrump__link--active" href="#" >NEW ARRIVALS</a>
+            <section className={s.categories}>
+              <div className={s.container}>
+                  <div className={s.categoriesWrapper}> 
+                      <div className={s.categoriesTop}>
+                          <h2 className={s.categoriesTitle}>women's</h2>
+                          <div className={s.breadcrump}>
+                              <ul className={s.breadcrumpList}>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLinkActive} href="#" >NEW ARRIVALS</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >SPECIALS</a>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >SPECIALS</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >BESTSELLERS</a>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >BESTSELLERS</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >MOST VIEWED</a>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >MOST VIEWED</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >FEATURED PRODUCTS</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div className="categories__bottom">
-                          <div className="categories__products products">
-                              <ul className="products__list">
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg1} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg2} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg3} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg4} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg5} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg6} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg7} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg8} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >FEATURED PRODUCTS</a>
                                   </li>
                               </ul>
                           </div>
                       </div>
-                      <button className="categories__btn">see all</button>
+                      <div className={s.categoriesBottom}>
+                          <div className={s.products}>
+                              <ul className={s.productsList}>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg1} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg2} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg3} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg4} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg5} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg6} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg7} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg8} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <button className={s.categoriesBtn}>see all</button>
                   </div>
               </div>
             </section>
-            <section className="categories">
-              <div className="container">
-                  <div className="categories__wrapper">
-                      <div className="categories__top">
-                          <h2 className="categories__title">men's</h2>
-                          <div className="categories__breadcrump breadcrump">
-                              <ul className="breadcrump__list">
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link breadcrump__link--active" href="#" >NEW ARRIVALS</a>
+            <section className={s.categories}>
+              <div className={s.container}>
+                  <div className={s.categoriesWrapper}>
+                      <div className={s.categoriesTop}>
+                          <h2 className={s.categoriesTitle}>men's</h2>
+                          <div className={s.breadcrump}>
+                              <ul className={s.breadcrumpList}>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLinkActive} href="#" >NEW ARRIVALS</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >SPECIALS</a>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >SPECIALS</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >BESTSELLERS</a>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >BESTSELLERS</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >MOST VIEWED</a>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >MOST VIEWED</a>
                                   </li>
-                                  <li className="breadcrump__item">
-                                      <a className="breadcrump__link" href="#" >FEATURED PRODUCTS</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div className="categories__bottom">
-                          <div className="categories__products products">
-                              <ul className="products__list">
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg9} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg10} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg11} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg12} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg13} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg14} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg15} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li className="products__item">
-                                      <div className="products__img-wrap">
-                                          <img className="products__img" src={productImg16} alt=""  />
-                                          <h3 className="products__title">Women's tracksuit Q109</h3>
-                                          <div className="products__intro">
-                                              <span className="products__price">$ 30.00</span>
-                                              <div className="products__rating rating">
-                                                  <div className="rating__body">
-                                                  <div className="rating--active"></div>
-                                                    <div className="rating__items">
-                                                        <input className="rating__item" type="radio" name="rating" value="1"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="2"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="3"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="4"/>
-                                                        <input className="rating__item" type="radio" name="rating" value="5"/>
-                                                    </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
+                                  <li className={s.breadcrumpItem}>
+                                      <a className={s.breadcrumpLink} href="#" >FEATURED PRODUCTS</a>
                                   </li>
                               </ul>
                           </div>
                       </div>
-                      <button className="categories__btn">see all</button>
+                      <div className={s.categoriesBottom}>
+                          <div className={s.products}>
+                              <ul className={s.productsList}>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg9} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg10} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg11} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg12} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg13} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg14} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg15} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li className={s.productsItem}>
+                                      <div className={s.productsImgWrap}>
+                                          <img className={s.productsImg} src={productImg16} alt=""  />
+                                          <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                          <div className={s.productsIntro}>
+                                              <span className={s.productsPrice}>$ 30.00</span>
+                                              <div className={s.rating}>
+                                                  <div className={s.ratingBody}>
+                                                  <div className={s.ratingActive}></div>
+                                                    <div className={s.ratingItems}>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="1"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="2"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="3"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="4"/>
+                                                        <input className={s.ratingItem} type="radio" name="rating" value="5"/>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <button className={s.categoriesBtn}>see all</button>
                   </div>
               </div>
         </section>

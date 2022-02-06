@@ -1,0 +1,210 @@
+.mainscreen {
+    padding: 30px 0;
+    border-bottom: 2px solid #F8F8F8;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mainscreenWrapper {
+
+}
+
+.mainscreenImgs {
+    display: grid;
+    justify-items: stretch;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.mainscreenImgWrap{
+    position: relative;
+}
+
+.mainscreenImgWrap:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.mainscreenImgWrap:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.mainscreenImgWrap:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.mainscreenImgWrap:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.mainscreenImg {
+
+}
+
+.mainscreenBanner {
+
+}
+
+.banner {
+    padding: 13px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+}
+
+.bannerBig {
+    padding: 13px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+
+}
+.bannerText{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.bannerTextGray {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #b3b3b3;
+}
+
+
+.bannerTextBig {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+.arrows {
+    position: absolute;
+}    
+
+.arrowsItem {
+    height: 40px;
+    width: 40px;
+    background-color:#FFFFFF;
+}
+
+.arrowsItemLeft {
+
+}
+
+.arrowsItemRight {
+
+}
+
+.arrowLeft {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color:#FFFFFF;
+    top: 50%;
+    transform: translatey(-50%);
+    position: absolute;
+    left: 5%;
+
+}
+
+.arrowRight {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color:#FFFFFF;
+    top: 50%;
+    transform: translatey(-50%);
+    position: absolute;
+    right: 5%;
+    
+}
+
+.arrowSpanLeft {
+    position: relative;
+
+}
+
+.arrowSpanLeft::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 17px;
+    left: 14px;
+    transform: rotate(-50deg);
+    background-color: black;
+
+}
+
+.arrowSpanLeft::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 24px;
+    left: 14px;
+    background-color: black;
+    transform: rotate(50deg);
+
+}
+
+.arrowSpanRight {
+    position: relative;
+}
+
+.arrowSpanRight::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 17px;
+    left: 14px;
+    transform: rotate(50deg);
+    background-color: black;
+
+}
+
+.arrowSpanRight::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 24px;
+    left: 14px;
+    background-color: black;
+    transform: rotate(-50deg);
+
+}
+

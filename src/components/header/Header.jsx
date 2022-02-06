@@ -1,4 +1,4 @@
-import './_header.scss';
+import s from './Header.module.css';
 import phoneIcon from './assets/img/phone-icon.svg';
 import locIcon from './assets/img/loc-icon.svg';
 import clockIcon from './assets/img/clock-icon.svg';
@@ -14,23 +14,23 @@ import cartIcon from './assets/img/cart-icon.svg';
 
 function Header() {
   return (
-    <header className="header">
-      <div className="header__top">
-        <div className="container">
-          <div className="header__top-wrap">
-            <div className="header__contacts">
-              <ul className="contacts__list">
-                <li className="contacts__item">
-                  <img className="contacts__img" src={phoneIcon} alt="phone"  />
-                  <span className="contacts__text">+375 29 100 20 30</span>
+    <header className={s.header}>
+      <div className={s.headerTop}>
+        <div className={s.container}>
+          <div className={s.headerTopWrap}>
+            <div className={s.headerContacts}>
+              <ul className={s.contactsList}>
+                <li className={s.contactsItem}>
+                  <img className={s.contactsImg }src={phoneIcon} alt="phone"  />
+                  <span className={s.contactsText}>+375 29 100 20 30</span>
                 </li>
-                <li className="contacts__item">
-                <img className="contacts__img" src={locIcon} alt="location"  />
-                  <span className="contacts__text">Belarus, Gomel, Lange 17</span>
+                <li className={s.contactsItem}>
+                <img className={s.contactsImg} src={locIcon} alt="location"  />
+                  <span className={s.contactsText}>Belarus, Gomel, Lange 17</span>
                 </li>
-                <li className="contacts__item">
-                <img className="contacts__img" src={clockIcon} alt="prime time"  />
-                  <span className="contacts__text">All week 24/7</span>
+                <li className={s.contactsItem}>
+                <img className={s.contactsImg} src={clockIcon} alt="prime time"  />
+                  <span className={s.contactsText}>All week 24/7</span>
                 </li>
               </ul>
             </div>
@@ -61,11 +61,11 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="header__bottom">
-        <div className="container">
-          <div className="header__bottom-wrap">
-            <div className="header__logo logo">
-              <img className="logo__img" src={logoImg} alt="CleverShop"  />
+      <div className={s.headerBottom}>
+        <div className={s.container}>
+          <div className={s.headerBottomWrap}>
+            <div className={s.headerLogo} logo>
+              <img className={s.logoImg} src={logoImg} alt="CleverShop"  />
             </div>
             <nav className="header__nav nav">
               <ul className="nav__list">
@@ -106,19 +106,19 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="header__account account">
-              <ul className="account__list">
-                <li className="account__item">
-                  <img className="account__img" src={searchIcon} alt="search"  />
+            <div className={s.account}>
+              <ul className={s.accountList}>
+                <li className={s.accountItem}>
+                  <img className={s.accountImg} src={searchIcon} alt="search"  />
                 </li>
-                <li className="account__item">
-                  <img className="account__img" src={planetIcon} alt="planet"  />
+                <li className={s.accountItem}>
+                  <img className={s.accountImg} src={planetIcon} alt="planet"  />
                 </li>
-                <li className="account__item">
-                  <img className="account__img" src={userIcon} alt="user"  />
+                <li className={s.accountItem}>
+                  <img className={s.accountImg} src={userIcon} alt="user"  />
                 </li>
-                <li className="account__item">
-                  <img className="account__img" src={cartIcon} alt="cart"  />
+                <li className={s.accountItem}>
+                  <img className={s.accountImg} src={cartIcon} alt="cart"  />
                 </li>
               </ul>
             </div>
