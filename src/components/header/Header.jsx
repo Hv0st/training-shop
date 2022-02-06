@@ -35,22 +35,22 @@ function Header() {
             <div className="header__social social">
               <ul className="social__list">
                 <li className="social__item">
-                  <a className="social__link" href='#'>
+                  <a className="social__link" href='/#'>
                     <img className="social__img" src={facebookIcon} alt="facebook"  />
                   </a>
                 </li>
                 <li className="social__item">
-                  <a className="social__link" href='#'>
+                  <a className="social__link" href='/#'>
                     <img className="social__img" src={twitterIcon} alt="twitter"  />
                   </a>
                 </li>
                 <li className="social__item">
-                  <a className="social__link" href='#'>
+                  <a className="social__link" href='/#'>
                     <img className="social__img" src={instaIcon} alt="instagram"  />
                   </a>
                 </li>
                 <li className="social__item">
-                  <a className="social__link" href='#'>
+                  <a className="social__link" href='/#'>
                     <img className="social__img" src={pintIcon} alt="pintereset"  />
                   </a>
                 </li>
@@ -68,37 +68,37 @@ function Header() {
             <nav className="header__nav nav">
               <ul className="nav__list">
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     About As
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     Women
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     Men
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     Beauty
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     Accessories
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     Blog
                   </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#" >
+                  <a className="nav__link" href="/#" >
                     Contact
                   </a>
                 </li>
