@@ -4,6 +4,7 @@ import Mainscreen from './components/mainscreen/Mainscreen';
 import Categories from './components/categories/Categories';
 import Promo from './components/promo/Promo';
 import Subscribe from './components/subscribe/Subscribe';
+import Blog from './components/blog/Blog';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Categories />
       <Promo />
       <Subscribe />
+      <Blog />
     </div>
   );
 }
