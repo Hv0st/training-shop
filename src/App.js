@@ -5,6 +5,7 @@ import Categories from './components/categories/Categories';
 import Promo from './components/promo/Promo';
 import Subscribe from './components/subscribe/Subscribe';
 import Blog from './components/blog/Blog';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Promo />
       <Subscribe />
       <Blog />
+      <Footer />
     </div>
   );
 }
