@@ -73,10 +73,10 @@ function Header() {
                   <a className={s.navLink} href="/#" >About As</a>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >Women</a>
+                  <a className={s.navLink} href="/women" >Women</a>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >Men</a>
+                  <a className={s.navLink} href="/men" >Men</a>
                 </li>
                 <li className={s.navItem}>
                   <a className={s.navLink} href="/#" >Beauty</a>

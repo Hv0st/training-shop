@@ -28,7 +28,7 @@
 
 .featuresIntro {
     margin-left: 13px;
-    min-width: 310px;
+    min-width: 302px;
 
 }
 
@@ -41,6 +41,9 @@
 }
 
 .featuresText {
-
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
 }
 

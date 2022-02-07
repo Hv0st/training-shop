@@ -1,19 +1,19 @@
 
 .container {
+    min-height: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .headerTop {
-    min-height: 24px;
     background-color: #121212;
 }
 
 .headerTopWrap {
+    min-height: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .headerCcontacts {
@@ -25,13 +25,14 @@
 }
 
 .headerBottom {
-    min-height: 66px;
     border-bottom: 2px solid #F8F8F8;
 }
 
 .headerBottomWrap {
+    min-height: 66px;
     display: flex;
     justify-content: space-between;
+    align-items: center
 }
 
 .headerLogo {

@@ -84,7 +84,7 @@
 .bannerText{
     font-size: 14px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 21px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -101,7 +101,7 @@
 
 
 .bannerTextBig {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 25px;
     letter-spacing: 0.06em;

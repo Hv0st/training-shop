@@ -1,5 +1,5 @@
 .blog {
-    padding: 100px 0;
+    padding: 100px 0 150px;
 }
 
 .container {
@@ -51,6 +51,7 @@
 .banner {
     min-height: 120px;
     width: 302px;
+    padding: 0 0 0 15px;
     position: absolute;
     top: 250px;
     left: 50%;
@@ -60,10 +61,12 @@
 }
 
 .subtitle {
+    margin-top: 25px;
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 
 }
 

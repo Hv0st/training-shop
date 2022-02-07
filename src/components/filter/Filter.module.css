@@ -1,0 +1,42 @@
+.filter {
+
+}
+
+.wrapper {
+    min-height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterSet {
+    display: flex;
+    align-items: center; 
+}
+
+.img {
+    margin-right: 18px;
+
+}
+
+.filterText {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+}
+
+.viewImg {
+
+}
+
+.viewImg + .viewImg {
+    margin-left: 32px;
+}
+
