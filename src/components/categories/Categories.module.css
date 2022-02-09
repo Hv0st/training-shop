@@ -98,7 +98,19 @@
 }
 
 .productsImgWrap {
+}
+
+.productWrap {
     position: relative;
+}
+
+.productLink {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
 }
 
 .productsSales {
@@ -129,6 +141,10 @@
 
 .productsTitle {
     margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
 
 }
 

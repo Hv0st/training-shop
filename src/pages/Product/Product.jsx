@@ -1,6 +1,10 @@
+import s from './Product.module.css';
+import ProductCard from '../../components/productCard/ProductCard';
+
 function Product() {
     return (
-      <div className="product">
+      <div className='productcard'>
+        <ProductCard />
       </div>
     );
 }

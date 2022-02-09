@@ -15,6 +15,7 @@ import productImg13 from './assets/img/products-men-5.jpg'
 import productImg14 from './assets/img/products-men-6.jpg'
 import productImg15 from './assets/img/products-men-7.jpg'
 import productImg16 from './assets/img/products-men-8.jpg'
+import { Link } from 'react-router-dom';
 
 function Categories() {
     return (
@@ -49,8 +50,11 @@ function Categories() {
                                 <ul className={s.productsList}>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg1} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg1} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>

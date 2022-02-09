@@ -1,5 +1,6 @@
 import s from './Women.module.css';
 import Filter from '../../components/filter/Filter';
+import Share from '../../components/share/Share';
 import productImg1 from '../../components/categories/assets/img/products-women-1.jpg';
 import productImg2 from '../../components/categories/assets/img/products-women-2.jpg';
 import productImg3 from '../../components/categories/assets/img/products-women-3.jpg';
@@ -12,6 +13,7 @@ import productImg8 from '../../components/categories/assets/img/products-women-8
 export const Women = () => {
   return (
     <div className={s.women}>
+      <Share />
       <div className={s.container}>
         <Filter />
         <div className={s.products}>

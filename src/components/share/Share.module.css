@@ -1,0 +1,73 @@
+.share {
+
+}
+
+.shareWrapper {
+    background-color: #F8F8F8;
+}
+
+.container {
+    max-width:  1100px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrump {
+    display: flex;
+    list-style: none;
+}
+
+.breadcrumpItem {
+
+}
+
+.breadcrumpItem + .breadcrumpItem {
+    margin-left: 20px;
+}
+
+.breadcrumpLink {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.shar {
+
+}
+
+.sharImg {
+
+}
+
+.sharText {
+    margin-left: 10px;
+}
+
+.bottom {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.shareTitle {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+}
+
+

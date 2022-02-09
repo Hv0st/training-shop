@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Main from './pages/Main/Main';
 import Women from './pages/Women/Women';
 import Men from './pages/Men/Men';
@@ -11,10 +11,10 @@ function App() {
     <div className='App'>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/women" element={<Women />} />
-        <Route path="/men" element={<Men />} />
-        <Route path="/product" element={<Product />} />
+        <Route exact path="/" element={<Main />} />
+        <Route exact path="/women" element={<Women />} />
+        <Route exact path="/men" element={<Men />} />
+        <Route exact path="/product" element={<Product />} />
       </Routes>
       <Footer />
     </div>
