@@ -8,13 +8,14 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-      <div className='App'>
+      <div className='App' data-test-id='app'>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Main />} />
-          <Route exact path="/women" element={<Women />} />
-          <Route exact path="/men" element={<Men />} />
-          <Route exact path="/product" element={<Product />} />
+          <Route index element={<Main />} />
+          <Route path='/' element={<Main />} />
+          <Route path="/women" element={<Women />} />
+          <Route path="/men" element={<Men />} />
+          <Route path="/product" element={<Product />} />
         </Routes>
         <Footer />
       </div>
