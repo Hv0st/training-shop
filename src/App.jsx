@@ -11,12 +11,12 @@ function App() {
       <div className='App' data-test-id='app'>
         <Header />
         <Routes>
-          <Route index element={<Main />} />
-          <Route path='/' element={<Main />} />
+          <Route path="/" element={<Main />} />
           <Route path="/women" element={<Women />} />
           <Route path="/men" element={<Men />} />
           <Route path="/product" element={<Product />} />
         </Routes>
+
         <Footer />
       </div>
   );

@@ -100,7 +100,7 @@ function ProductCard() {
                             <p className={s.infoText}><span className={s.infoTextSpan}>Material:</span>100% Polyester</p>
                         </div>
                         <div className={s.reviews}>
-                            <span className={s.reviews.title}>reviews</span>
+                            <span className={s.reviewsTitle}>reviews</span>
                             <div className={s.reviewsIntro}>
                                 <div className={s.rating}>
                                     <div className={s.ratingBody}>
