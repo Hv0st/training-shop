@@ -1,0 +1,27 @@
+.productCard {
+    padding: 0 0 120px;
+}
+
+.productCardContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.relatedProducts {
+
+}
+
+.relatedProductsHeader {
+
+}
+
+.relatedProductsHeaderTitle {
+
+}
+
+.relatedProductsItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 30px;
+}

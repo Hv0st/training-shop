@@ -1,0 +1,49 @@
+.promoItem {
+
+}
+
+.promoItemContainer {
+    max-width: 540px;
+}
+
+.promoItemImgWrap {
+    position: relative;
+}
+
+.promoItem {
+
+}
+
+.promoItemBanner {
+    padding: 16px 24px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.prodoItemBannerSubtitle {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #A6A6A6;
+    text-transform: uppercase;
+    
+}
+
+.promoItemTitle {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+}

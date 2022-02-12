@@ -1,0 +1,93 @@
+.product {
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productImgWrap {
+    position: relative;
+}
+
+.productImg {
+
+}
+
+.productTitle {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.productSales {
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #E91E63;
+}
+
+.productSalesNoSales {
+    display: none;
+}
+
+.productSalesPercent {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+.productPriceWrap {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productPriceInner {
+    display: flex;
+    align-items: center;
+}
+
+.productPrice {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #121212;
+}
+
+.productPriceSales {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-decoration: line-through;
+    color: #828282;
+}
+
+.productRating {
+    max-width: 70px;
+}
+
+.ratingStars {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.productRatingStar {
+    height: 10px;
+}
+
+
+
+

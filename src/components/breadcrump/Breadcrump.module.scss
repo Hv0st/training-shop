@@ -1,0 +1,40 @@
+.breadcrump {
+
+}
+
+.breadcrumpList {
+    max-width: 665px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.breadcrumpItem {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #A5A5A5;
+}
+
+.breadcrumpItemActive {
+
+}
+
+.breadcrumpItem + .breadcrumpItem {
+ margin-left: 30px;
+}
+
+.breadcrumpText {
+    
+}
+
+.breadcrumpItemActive {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #121212;
+
+}
+

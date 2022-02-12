@@ -23,10 +23,6 @@ import visaImg from './assets/img/visa.png';
 import mastercardImg from './assets/img/mastercard.png';
 import discoverImg from './assets/img/discover.png';
 import expressImg from './assets/img/american-express.png';
-import productImg1 from './assets/img/related-img-1.jpg';
-import productImg2 from './assets/img/related-img-2.jpg';
-import productImg3 from './assets/img/related-img-3.jpg';
-import productImg4 from './assets/img/related-img-4.jpg';
 
 
 function ProductCard() {
@@ -166,119 +162,6 @@ function ProductCard() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className={s.relatedProductsWrap}>
-                    <h3 className={s.relatedTitle}>Related products</h3>
-                    <ul className={s.productsList}>
-                        <li className={s.productsItem}>
-                            <div className={s.productsImgWrap}>
-                                <div className={s.productWrap}>
-                                    <img className={s.productsImg} src={productImg1} alt="product" />
-                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
-                                    <Link className={s.productLink} to="/product"></Link>
-                                </div>
-                                <div className={s.productsIntro}>
-                                    <div>
-                                        <span className={s.productsPrice}>$ 30.00</span>
-                                        <span className={s.oldPrice}></span>
-                                    </div>
-                                    <div className={s.rating}>
-                                        <div className={s.ratingBody}>
-                                            <div className={s.ratingActive}></div>
-                                            <div className={s.ratingItems}>
-                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className={s.productsItem}>
-                            <div className={s.productsImgWrap}>
-                                <div className={s.productWrap}>
-                                    <img className={s.productsImg} src={productImg2} alt="product" />
-                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
-                                    <Link className={s.productLink} to="/product"></Link>
-                                </div>
-                                <div className={s.productsIntro}>
-                                    <div>
-                                        <span className={s.productsPrice}>$ 30.00</span>
-                                        <span className={s.oldPrice}></span>
-                                    </div>
-                                    <div className={s.rating}>
-                                        <div className={s.ratingBody}>
-                                            <div className={s.ratingActive}></div>
-                                            <div className={s.ratingItems}>
-                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className={s.productsItem}>
-                            <div className={s.productsImgWrap}>
-                                <div className={s.productWrap}>
-                                    <img className={s.productsImg} src={productImg3} alt="product" />
-                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
-                                    <Link className={s.productLink} to="/product"></Link>
-                                </div>
-                                <div className={s.productsIntro}>
-                                    <div>
-                                        <span className={s.productsPrice}>$ 30.00</span>
-                                        <span className={s.oldPrice}></span>
-                                    </div>
-                                    <div className={s.rating}>
-                                        <div className={s.ratingBody}>
-                                            <div className={s.ratingActive}></div>
-                                            <div className={s.ratingItems}>
-                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className={s.productsItem}>
-                            <div className={s.productsImgWrap}>
-                                <div className={s.productWrap}>
-                                    <img className={s.productsImg} src={productImg4} alt="product" />
-                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
-                                    <Link className={s.productLink} to="/product"></Link>
-                                </div>
-                                <div className={s.productsIntro}>
-                                    <div>
-                                        <span className={s.productsPrice}>$ 30.00</span>
-                                        <span className={s.oldPrice}></span>
-                                    </div>
-                                    <div className={s.rating}>
-                                        <div className={s.ratingBody}>
-                                            <div className={s.ratingActive}></div>
-                                            <div className={s.ratingItems}>
-                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
-                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

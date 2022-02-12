@@ -1,3 +1,4 @@
+import s from './Main.module.scss';
 import Mainscreen from '../../components/mainscreen/Mainscreen';
 import Categories from '../../components/categories/Categories';
 import Promo from '../../components/promo/Promo';
