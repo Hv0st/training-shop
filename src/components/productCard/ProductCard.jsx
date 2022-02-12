@@ -1,4 +1,6 @@
-import s from './ProductCard.module.css';
+import s from './ProductCard.module.scss';
+import {Link} from 'react-router-dom';
+import Share from '../share/Share';
 import leftImg1 from './assets/img/product-img-left-1.jpg';
 import leftImg2 from './assets/img/product-img-left-2.jpg';
 import leftImg3 from './assets/img/product-img-left-3.jpg';
@@ -21,12 +23,19 @@ import visaImg from './assets/img/visa.png';
 import mastercardImg from './assets/img/mastercard.png';
 import discoverImg from './assets/img/discover.png';
 import expressImg from './assets/img/american-express.png';
+import productImg1 from './assets/img/related-img-1.jpg';
+import productImg2 from './assets/img/related-img-2.jpg';
+import productImg3 from './assets/img/related-img-3.jpg';
+import productImg4 from './assets/img/related-img-4.jpg';
 
 
 function ProductCard() {
     return (
         <div>
+            <Share />
             <div className={s.container}>
+                <div className={s.productHeader}>
+                </div>
                 <div className={s.productCardWrapper}>
                     <div className={s.productCardLeft}>
                         <img className={s.productCardLeftImg} src={leftImg1} alt="" />
@@ -95,12 +104,13 @@ function ProductCard() {
                             <span className={s.desriptText}>description</span>
                         </div>
                         <div className={s.info}>
+                            <h4 className={s.infoTitle}>Additional information</h4>
                             <p className={s.infoText}><span className={s.infoTextSpan}>Color:</span>Blue, White, Black, Grey</p>
                             <p className={s.infoText}><span className={s.infoTextSpan}>Size:</span>XS, S, M, L</p>
                             <p className={s.infoText}><span className={s.infoTextSpan}>Material:</span>100% Polyester</p>
                         </div>
                         <div className={s.reviews}>
-                            <span className={s.reviewsTitle}>reviews</span>
+                            <h4 className={s.reviewsTitle}>reviews</h4>
                             <div className={s.reviewsIntro}>
                                 <div className={s.rating}>
                                     <div className={s.ratingBody}>
@@ -114,9 +124,161 @@ function ProductCard() {
                                         </div>
                                     </div>
                                 </div>
+                                <span >Write a review</span>
+                            </div>
+                            <div className={s.feedbacks}>
+                                <div className={s.feedback}>
+                                    <div className={s.feddbackIntro}>
+                                        <span className={s.userName}>Oleh Chabanov</span>
+                                        <div className={s.feedbackRating}>
+                                            <div className={s.feedbackRatingBody}>
+                                                <div className={s.feedbackRatingActive}></div>
+                                                <div className={s.feedbackRatingItems}>
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="1" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="2" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="3" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="4" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="5" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className={s.feedbackText}>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                                </div>
+                                <div className={s.feedback}>
+                                    <div className={s.feddbackIntro}>
+                                        <span className={s.userName}>ShAmAn design</span>
+                                        <div className={s.feedbackRating}>
+                                            <div className={s.feedbackRatingBody}>
+                                                <div className={s.feedbackRatingActive}></div>
+                                                <div className={s.feedbackRatingItems}>
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="1" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="2" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="3" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="4" />
+                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="5" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className={s.feedbackText}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className={s.relatedProductsWrap}>
+                    <h3 className={s.relatedTitle}>Related products</h3>
+                    <ul className={s.productsList}>
+                        <li className={s.productsItem}>
+                            <div className={s.productsImgWrap}>
+                                <div className={s.productWrap}>
+                                    <img className={s.productsImg} src={productImg1} alt="product" />
+                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                    <Link className={s.productLink} to="/product"></Link>
+                                </div>
+                                <div className={s.productsIntro}>
+                                    <div>
+                                        <span className={s.productsPrice}>$ 30.00</span>
+                                        <span className={s.oldPrice}></span>
+                                    </div>
+                                    <div className={s.rating}>
+                                        <div className={s.ratingBody}>
+                                            <div className={s.ratingActive}></div>
+                                            <div className={s.ratingItems}>
+                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={s.productsItem}>
+                            <div className={s.productsImgWrap}>
+                                <div className={s.productWrap}>
+                                    <img className={s.productsImg} src={productImg2} alt="product" />
+                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                    <Link className={s.productLink} to="/product"></Link>
+                                </div>
+                                <div className={s.productsIntro}>
+                                    <div>
+                                        <span className={s.productsPrice}>$ 30.00</span>
+                                        <span className={s.oldPrice}></span>
+                                    </div>
+                                    <div className={s.rating}>
+                                        <div className={s.ratingBody}>
+                                            <div className={s.ratingActive}></div>
+                                            <div className={s.ratingItems}>
+                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={s.productsItem}>
+                            <div className={s.productsImgWrap}>
+                                <div className={s.productWrap}>
+                                    <img className={s.productsImg} src={productImg3} alt="product" />
+                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                    <Link className={s.productLink} to="/product"></Link>
+                                </div>
+                                <div className={s.productsIntro}>
+                                    <div>
+                                        <span className={s.productsPrice}>$ 30.00</span>
+                                        <span className={s.oldPrice}></span>
+                                    </div>
+                                    <div className={s.rating}>
+                                        <div className={s.ratingBody}>
+                                            <div className={s.ratingActive}></div>
+                                            <div className={s.ratingItems}>
+                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li className={s.productsItem}>
+                            <div className={s.productsImgWrap}>
+                                <div className={s.productWrap}>
+                                    <img className={s.productsImg} src={productImg4} alt="product" />
+                                    <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                    <Link className={s.productLink} to="/product"></Link>
+                                </div>
+                                <div className={s.productsIntro}>
+                                    <div>
+                                        <span className={s.productsPrice}>$ 30.00</span>
+                                        <span className={s.oldPrice}></span>
+                                    </div>
+                                    <div className={s.rating}>
+                                        <div className={s.ratingBody}>
+                                            <div className={s.ratingActive}></div>
+                                            <div className={s.ratingItems}>
+                                                <input className={s.ratingItem} type="radio" name="rating" value="1" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="2" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="3" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="4" />
+                                                <input className={s.ratingItem} type="radio" name="rating" value="5" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import s from'./Features.module.css';
+import s from'./Features.module.scss';
 import shippingImg from './assets/img/shipping-icon.svg';
 import returnImg from './assets/img/return-icon.svg';
 import supportImg from './assets/img/support-icon.svg';

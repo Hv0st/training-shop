@@ -1,4 +1,5 @@
-import s from './Header.module.css';
+import s from './Header.module.scss';
+import {Link} from 'react-router-dom';
 import phoneIcon from './assets/img/phone-icon.svg';
 import locIcon from './assets/img/loc-icon.svg';
 import clockIcon from './assets/img/clock-icon.svg';
@@ -65,30 +66,30 @@ function Header() {
         <div className={s.container}>
           <div className={s.headerBottomWrap}>
             <div className={s.headerLogo} logo>
-              <img className={s.logoImg} src={logoImg} alt="CleverShop"  />
+              <Link to="/" data-test-id="header-logo-link"><img className={s.logoImg} src={logoImg} alt="CleverShop"  /></Link>
             </div>
-            <nav className={s.nav}>
+            <nav className={s.nav} data-test-id='menu'>
               <ul className={s.navList}>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >About As</a>
+                  <Link className={s.navLink} to='/about'  data-test-id={`menu-link-about`}>About As</Link>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/women" >Women</a>
+                  <Link className={s.navLink} to={`/women`} data-test-id={`menu-link-women`} >Women</Link>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/men" >Men</a>
+                  <Link className={s.navLink} to="/men" data-test-id={`menu-link-men`}>Men</Link>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >Beauty</a>
+                  <Link className={s.navLink} to="/beauty" data-test-id='menu-link-beauty'>Beauty</Link>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >Accessories</a>
+                  <Link className={s.navLink} to='/accessories' data-test-id='menu-link-accessories'>Accessories</Link>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >Blog</a>
+                  <Link className={s.navLink} to='/blog' data-test-id='menu-link-blog'>Blog</Link>
                 </li>
                 <li className={s.navItem}>
-                  <a className={s.navLink} href="/#" >Contact</a>
+                  <Link className={s.navLink} to="/contact" data-test-id='menu-link-contact'>Contact</Link>
                 </li>
               </ul>
             </nav>

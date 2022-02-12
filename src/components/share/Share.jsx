@@ -1,4 +1,4 @@
-import s from './Share.module.css';
+import s from './Share.module.scss';
 import shareImg from './assets/img/share-icon.svg';
 
 function Share() {

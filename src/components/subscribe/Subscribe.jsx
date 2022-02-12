@@ -1,4 +1,4 @@
-import s from './Subscribe.module.css';
+import s from './Subscribe.module.scss';
 
 function Subscribe() {
     return (

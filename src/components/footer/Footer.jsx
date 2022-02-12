@@ -1,4 +1,5 @@
-import s from './Footer.module.css';
+import s from './Footer.module.scss';
+import {Link} from 'react-router-dom'
 import facebookIcon from './assets/img/facebook-icon.svg';
 import twitterIcon from './assets/img/twitter-icon.svg';
 import instaIcon from './assets/img/insta-icon.svg';
@@ -17,7 +18,7 @@ import expressImg from './assets/img/american-express.png';
 
 function Footer() {
     return (
-        <div className={s.footer}>
+        <div className={s.footer} data-test-id="footer">
             <div className={s.top}>
                 <div className={s.container}>
                     <div className={s.topWrapper}>
@@ -61,16 +62,16 @@ function Footer() {
                             <h4 className={s.footerSubtitle}>Categories</h4>
                             <div className={s.footerList}>
                                 <li className={s.footerItem}>
-                                    <a href="/#" className={s.footerLink}>Men</a>
+                                    <Link to="/men" className={s.footerLink} data-test-id='footer-nav-link-men'>Men</Link>
                                 </li>
                                 <li className={s.footerItem}>
-                                    <a href="/#" className={s.footerLink}>Women</a>
+                                    <Link to='/women' className={s.footerLink} data-test-id='footer-nav-link-woomen'>Women</Link>
                                 </li>
                                 <li className={s.footerItem}>
-                                    <a href="/#" className={s.footerLink}>Accessories</a>
+                                    <Link to='/accessories' className={s.footerLink} data-test-id='footer-nav-link-accessories'>Accessories</Link>
                                 </li>
                                 <li className={s.footerItem}>
-                                    <a href="/#" className={s.footerLink}>Beauty</a>
+                                    <Link to='/beauty' className={s.footerLink} data-test-id='footer-nav-link-beauty'>Beauty</Link>
                                 </li>
                             </div>
                         </div>

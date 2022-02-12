@@ -1,4 +1,4 @@
-import s from './Blog.module.css';
+import s from './Blog.module.scss';
 import img1 from './assets/img/blog-img-1.jpg';
 import img2 from './assets/img/blog-img-2.jpg';
 import img3 from './assets/img/blog-img-3.jpg';

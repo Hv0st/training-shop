@@ -1,4 +1,4 @@
-import s from './Filter.module.css';
+import s from './Filter.module.scss';
 import filterIcon from './assets/img/filter.svg';
 import viewListImg from './assets/img/view-list.svg';
 import viewGridImg from './assets/img/view-grid.svg';

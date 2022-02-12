@@ -5,6 +5,26 @@
 .container {
     max-width: 1100px;
     margin: 0 auto;
+
+    @media screen and (max-width: 992px) {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 576px) {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 360px) {
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
 
 .wrapper {
@@ -38,14 +58,32 @@
 .imgList {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .imgWrap {
     position: relative;
+
+}
+
+.imgWrap + .imgWrap{
+
+    @media screen and (max-width: 576px) {
+        margin-top: 150px;
+    }
+    
 }
 
 .img {
 
+    @media screen and (max-width: 360px) {
+        max-width: 320px;
+    }
 }
 
 .banner {

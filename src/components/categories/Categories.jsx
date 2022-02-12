@@ -1,4 +1,4 @@
-import s from './Categories.module.css';
+import s from './Categories.module.scss';
 import productImg1 from './assets/img/products-women-1.jpg'
 import productImg2 from './assets/img/products-women-2.jpg'
 import productImg3 from './assets/img/products-women-3.jpg'
@@ -16,6 +16,8 @@ import productImg14 from './assets/img/products-men-6.jpg'
 import productImg15 from './assets/img/products-men-7.jpg'
 import productImg16 from './assets/img/products-men-8.jpg'
 import { Link } from 'react-router-dom';
+
+
 
 function Categories() {
     return (
@@ -77,8 +79,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg2} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg2} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -105,8 +110,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg3} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg3} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -129,8 +137,12 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg4} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg4} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
+
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -153,8 +165,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg5} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg5} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -177,8 +192,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg6} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg6} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -201,8 +219,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg7} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg7} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -225,8 +246,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg8} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg8} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -284,8 +308,11 @@ function Categories() {
                                 <ul className={s.productsList}>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg9} alt="" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                        <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg9} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -308,8 +335,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg10} alt="" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg10} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -332,8 +362,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg11} alt="" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg11} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -356,8 +389,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg12} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg12} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -380,8 +416,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg13} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg13} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -404,8 +443,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg14} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg14} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -428,8 +470,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg15} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg15} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>
@@ -452,8 +497,11 @@ function Categories() {
                                     </li>
                                     <li className={s.productsItem}>
                                         <div className={s.productsImgWrap}>
-                                            <img className={s.productsImg} src={productImg16} alt="product" />
-                                            <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                            <div className={s.productWrap}>
+                                                <img className={s.productsImg} src={productImg16} alt="product" />
+                                                <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
+                                                <Link className={s.productLink} to="/product"></Link>
+                                            </div>
                                             <div className={s.productsIntro}>
                                                 <div>
                                                     <span className={s.productsPrice}>$ 30.00</span>

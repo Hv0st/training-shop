@@ -1,4 +1,4 @@
-import s from './Promo.module.css'
+import s from './Promo.module.scss'
 import promoImg1 from './assets/img/promo-img-1.jpg';
 import promoImg2 from './assets/img/promo-img-2.jpg';
 
