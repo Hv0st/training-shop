@@ -71,13 +71,13 @@ function Header() {
             <nav className={s.nav} data-test-id='menu'>
               <ul className={s.navList}>
                 <li className={s.navItem}>
-                  <Link className={s.navLink} to='/about'  data-test-id={`menu-link-about`}>About As</Link>
+                  <Link className={s.navLink} to='/about'  data-test-id='menu-link-about'>About As</Link>
                 </li>
                 <li className={s.navItem}>
-                  <Link className={s.navLink} to={`/women`} data-test-id={`menu-link-women`} >Women</Link>
+                  <Link className={s.navLink} to={`/women`} data-test-id='menu-link-women' >Women</Link>
                 </li>
                 <li className={s.navItem}>
-                  <Link className={s.navLink} to="/men" data-test-id={`menu-link-men`}>Men</Link>
+                  <Link className={s.navLink} to="/men" data-test-id='menu-link-men'>Men</Link>
                 </li>
                 <li className={s.navItem}>
                   <Link className={s.navLink} to="/beauty" data-test-id='menu-link-beauty'>Beauty</Link>

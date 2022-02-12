@@ -1,5 +1,5 @@
 import s from './Men.module.scss';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Filter from '../../components/filter/Filter';
 import Share from '../../components/share/Share';
 import productImg1 from '../../components/categories/assets/img/products-men-1.jpg';
@@ -13,7 +13,7 @@ import productImg8 from '../../components/categories/assets/img/products-men-8.j
 
 export const Men = () => {
   return (
-    <div className={s.men}>
+    <div className={s.men} data-test-id="products-page-men">
       <Share />
       <div className={s.container}>
         <Filter />
@@ -53,6 +53,9 @@ export const Men = () => {
                     <img className={s.productsImg} src={productImg2} alt="product" />
                     <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
                     <Link className={s.productLink} to="/product"></Link>
+                    <div className={s.productsSales}>
+                      <span className={s.productsSalesSpan}>-50%</span>
+                    </div>
                   </div>
                   <div className={s.productsIntro}>
                     <div>
@@ -72,9 +75,6 @@ export const Men = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className={s.productsSales}>
-                    <span className={s.productsSalesSpan}>-50%</span>
                   </div>
                 </div>
               </li>

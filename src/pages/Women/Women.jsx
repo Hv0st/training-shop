@@ -13,7 +13,7 @@ import productImg8 from '../../components/categories/assets/img/products-women-8
 
 export const Women = () => {
   return (
-    <div className={s.women}>
+    <div className={s.women} data-test-id="products-page-women">
       <Share />
       <div className={s.container}>
         <Filter />

@@ -48,9 +48,9 @@ function Categories() {
                             </div>
                         </div>
                         <div className={s.categoriesBottom}>
-                            <div className={s.products}>
+                            <div className={s.products} data-test-id='clothes-women'>
                                 <ul className={s.productsList}>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/1'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg1} alt="product" />
@@ -77,12 +77,15 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/2'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg2} alt="product" />
                                                 <h3 className={s.productsTitle}>Women's tracksuit Q109</h3>
                                                 <Link className={s.productLink} to="/product"></Link>
+                                                <div className={s.productsSales}>
+                                                <span className={s.productsSalesSpan}>-50%</span>
+                                            </div>
                                             </div>
                                             <div className={s.productsIntro}>
                                                 <div>
@@ -103,12 +106,9 @@ function Categories() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className={s.productsSales}>
-                                                <span className={s.productsSalesSpan}>-50%</span>
-                                            </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/3'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg3} alt="product" />
@@ -135,7 +135,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/4'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg4} alt="product" />
@@ -163,7 +163,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/5'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg5} alt="product" />
@@ -190,7 +190,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/6'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg6} alt="product" />
@@ -217,7 +217,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/7'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg7} alt="product" />
@@ -244,7 +244,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-women/8'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg8} alt="product" />
@@ -280,7 +280,7 @@ function Categories() {
             </section>
             <section className={s.categories}>
                 <div className={s.container}>
-                    <div className={s.categoriesWrapper}>
+                    <div className={s.categoriesWrapper} data-test-id='clothes-men'>
                         <div className={s.categoriesTop}>
                             <h2 className={s.categoriesTitle}>men's</h2>
                             <div className={s.breadcrump}>
@@ -306,7 +306,7 @@ function Categories() {
                         <div className={s.categoriesBottom}>
                             <div className={s.products}>
                                 <ul className={s.productsList}>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/1'>
                                         <div className={s.productsImgWrap}>
                                         <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg9} alt="product" />
@@ -333,7 +333,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/2'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg10} alt="product" />
@@ -360,7 +360,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/3'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg11} alt="product" />
@@ -387,7 +387,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/4'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg12} alt="product" />
@@ -414,7 +414,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/5'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg13} alt="product" />
@@ -441,7 +441,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/6'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg14} alt="product" />
@@ -468,7 +468,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/7'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg15} alt="product" />
@@ -495,7 +495,7 @@ function Categories() {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={s.productsItem}>
+                                    <li className={s.productsItem} data-test-id='clothes-men/8'>
                                         <div className={s.productsImgWrap}>
                                             <div className={s.productWrap}>
                                                 <img className={s.productsImg} src={productImg16} alt="product" />
