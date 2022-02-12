@@ -1,0 +1,10 @@
+
+.ratingStars {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ratingStar +.ratingStar{
+    margin-left: 4px;
+}

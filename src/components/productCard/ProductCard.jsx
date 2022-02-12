@@ -1,6 +1,6 @@
 import s from './ProductCard.module.scss';
-import {Link} from 'react-router-dom';
 import Share from '../share/Share';
+import Rating from '../rating/Rating';
 import leftImg1 from './assets/img/product-img-left-1.jpg';
 import leftImg2 from './assets/img/product-img-left-2.jpg';
 import leftImg3 from './assets/img/product-img-left-3.jpg';
@@ -108,54 +108,21 @@ function ProductCard() {
                         <div className={s.reviews}>
                             <h4 className={s.reviewsTitle}>reviews</h4>
                             <div className={s.reviewsIntro}>
-                                <div className={s.rating}>
-                                    <div className={s.ratingBody}>
-                                        <div className={s.ratingActive}></div>
-                                        <div className={s.ratingItems}>
-                                            <input className={s.ratingItem} type="radio" name="rating" value="1" />
-                                            <input className={s.ratingItem} type="radio" name="rating" value="2" />
-                                            <input className={s.ratingItem} type="radio" name="rating" value="3" />
-                                            <input className={s.ratingItem} type="radio" name="rating" value="4" />
-                                            <input className={s.ratingItem} type="radio" name="rating" value="5" />
-                                        </div>
-                                    </div>
-                                </div>
+                                <Rating size="16px"/>
                                 <span >Write a review</span>
                             </div>
                             <div className={s.feedbacks}>
                                 <div className={s.feedback}>
                                     <div className={s.feddbackIntro}>
                                         <span className={s.userName}>Oleh Chabanov</span>
-                                        <div className={s.feedbackRating}>
-                                            <div className={s.feedbackRatingBody}>
-                                                <div className={s.feedbackRatingActive}></div>
-                                                <div className={s.feedbackRatingItems}>
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="1" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="2" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="3" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="4" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="5" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <Rating size="10px"/>
                                     </div>
                                     <p className={s.feedbackText}>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
                                 </div>
                                 <div className={s.feedback}>
                                     <div className={s.feddbackIntro}>
                                         <span className={s.userName}>ShAmAn design</span>
-                                        <div className={s.feedbackRating}>
-                                            <div className={s.feedbackRatingBody}>
-                                                <div className={s.feedbackRatingActive}></div>
-                                                <div className={s.feedbackRatingItems}>
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="1" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="2" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="3" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="4" />
-                                                    <input className={s.feedbackRatingItem} type="radio" name="rating" value="5" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <Rating size="10px"/>
                                     </div>
                                     <p className={s.feedbackText}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
                                 </div>
