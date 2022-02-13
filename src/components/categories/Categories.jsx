@@ -55,7 +55,7 @@ function Categories() {
                         <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg13} isSale="" path="/men/5" data="clothes-card-men"/>
                         <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg14} isSale="" path="/men/6" data="clothes-card-men"/>
                         <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg15} isSale="" path="/men/7" data="clothes-card-men"/>
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg16} isSale="" path="/men/8" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg16} isSale="" path="/women/8" data="clothes-card-men"/>
                     </div>
                 </div>
             </div>
