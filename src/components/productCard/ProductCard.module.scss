@@ -8,22 +8,14 @@
 
     @media screen and (max-width: 992px) {
         max-width: 960px;
-        margin: 0 auto;
     }
 
     @media screen and (max-width: 768px) {
         max-width: 720px;
-        margin: 0 auto;
     }
 
     @media screen and (max-width: 576px) {
-        max-width: 540px;
-        margin: 0 auto;
-    }
-
-    @media screen and (max-width: 360px) {
         max-width: 320px;
-        margin: 0 auto;
     }
 }
 
@@ -32,13 +24,16 @@
     grid-template-columns: 100px 1fr 1fr;
     grid-gap: 15px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1110px) {
         grid-template-columns: 100px 1fr;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 576px) {
         grid-template-columns: 1fr;
     }
+
 }
 
 .relatedProductsWrap {
@@ -46,8 +41,9 @@
 }
 
 .productCardLeft {
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 576px) {
         padding-top: 10px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,13 +52,13 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        max-width: 320px;
+        max-width: 270px;
 
     }
 }
 
 .productCardLeftImg {
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 576px) {
         max-width: 60px;
     }
 }
@@ -70,14 +66,14 @@
 .productCardLeftImg + .productCardLeftImg {
     margin-top: 15px;
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 576px) {
         margin-top: 0px;
 
     }
 }
 
 .productCardMedium {
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 576px) {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
@@ -87,21 +83,17 @@
 
 .productCardMediumImg {
     @media screen and (max-width: 576px) {
-        max-width: 400px;
-    }
-
-    @media screen and (max-width: 360px) {
         max-width: 320px;
     }
 }
 
 .productCardRight {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1110px) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 576px) {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
@@ -111,6 +103,14 @@
 
 .colorSize {
     padding: 35px 0;
+
+    @media screen and (max-width: 1110px) {
+        max-width: 305px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 .color {
@@ -198,11 +198,17 @@
 
 .priceWrap {
     height: 110px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid #E5E5E5;
     border-bottom: 2px solid #E5E5E5;
+
+    @media screen and (max-width: 576px) {
+        min-height: 170px;
+        flex-direction: column;
+    }
 }
 
 .price {
@@ -230,15 +236,28 @@
 }
 
 .features {
-    padding: 35px 0;
+    padding: 35px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 576px) {
+        padding: 10px 10px;
+        max-width: 190px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .featuresItem {
     display: flex;
     align-items: center;
+}
+.featuresItem + .featuresItem {
+    @media screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
 }
 
 .featuresItemText {
@@ -253,12 +272,17 @@
 
 .pay {
     height: 85px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     border-top: 2px solid #E5E5E5;
     border-bottom: 2px solid #E5E5E5;
+
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
 }
 
 .payImg {
@@ -268,6 +292,10 @@
 .descript {
     padding: 32px;
     border-bottom: 2px solid #E5E5E5;
+
+    @media screen and (max-width: 576px) {
+        border-top: 2px solid #E5E5E5;
+    }
 }
 
 .desriptText {
@@ -282,6 +310,7 @@
 
 .info {
     min-height: 200px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,7 +341,7 @@
 }
 
 .reviews {
-    padding: 32px 0;
+    padding: 32px 10px;
     border-bottom: 2px solid #E5E5E5;
 }
 

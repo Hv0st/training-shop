@@ -10,49 +10,34 @@ function Mainscreen() {
     return (
         <div className={s.mainscreen}>
             <div className={s.container}>
-                <div className={s.mainscreenWrapper}>
-                    <div className={s.mainscreenImgs}>
-                        <div className={s.mainscreenImgWrap}>
-                            <img className={s.mainscreenImg} src={img} alt="Product" />
-                            <div className={s.bannerBig}>
-                                <span className={s.bannerTextGray}>banner</span>
-                                <span className={s.bannerTextBig}>your Title text </span>
-                            </div>
-                            <div className={s.arrowLeft}>
-                                <span className={s.arrowSpanLeft}></span>
-                            </div>
-                            <div className={s.arrowRight}>
-                                <span className={s.arrowSpanRight}></span>
-                            </div>
+                <div className={s.mainscreenImgs}>
+                    <div className={s.mainscreenImgWrapper}>
+                        <img className={s.mainscreenImg} src={img} alt="" />
+                        <div className={`${s.mainscreenBanner} ${s.mainscreenBannerBig}`}>
+                            <span className={s.mainscreenBannerSubtitle}>banner</span>
+                            <h2 className={`${s.mainscreenBannerTitle} ${s.mainscreenBannerTitleBig}`}>your Title text </h2>
                         </div>
-                        <Link to='/women'>
-                            <div className={s.mainscreenImgWrap}>
-                                <img className={s.mainscreenImg} src={imgWomen} alt="Women" />
-                                <div className={s.banner}>
-                                    <span className={s.bannerText}>women</span>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to='/men'>
-                            <div className={s.mainscreenImgWrap}>
-                                <img className={s.mainscreenImg} src={imgMen} alt="Men" />
-                                <div className={s.banner}>
-                                    <span className={s.bannerText}>men</span>
-
-                                </div>
-                            </div>
-                        </Link>
-                        <div className={s.mainscreenImgWrap}>
-                            <img className={s.mainscreenImg} src={imgAccess} alt="Accessories" />
-                            <div className={s.banner}>
-                                <span className={s.bannerText}>accessories</span>
-
-                            </div>
+                    </div>
+                    <div className={s.mainscreenImgWrapper}>
+                        <img className={s.mainscreenImg} src={imgWomen} alt="" />
+                        <div className={s.mainscreenBanner}>
+                            <h2 className={s.mainscreenBannerTitle}>Women</h2>
+                        </div>
+                    </div>
+                    <div className={s.mainscreenImgWrapper}>
+                        <img className={s.mainscreenImg} src={imgMen} alt="" />
+                        <div className={s.mainscreenBanner}>
+                            <h2 className={s.mainscreenBannerTitle}>men</h2>
+                        </div>
+                    </div>
+                    <div className={s.mainscreenImgWrapper}>
+                        <img className={s.mainscreenImg} src={imgAccess} alt="" />
+                        <div className={s.mainscreenBanner}>
+                            <h2 className={s.mainscreenBannerTitle}>Accessories</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <Features />
         </div>
     );
 }

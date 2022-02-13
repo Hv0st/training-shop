@@ -6,9 +6,20 @@
 .promoContainer {
     max-width: 1100px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1120px) {
+        max-width: 555px;
+        padding: 0 10px;
+
+    }
 }
 
 .promoWrapper {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1120px) {
+        flex-direction: column;
+
+    }
 }

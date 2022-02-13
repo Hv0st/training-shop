@@ -106,6 +106,7 @@ function Header() {
                 </li>
                 <li className={s.accountItem}>
                   <img className={s.accountImg} src={cartIcon} alt="cart"  />
+                  <span className={s.inCart}>2</span>
                 </li>
               </ul>
             </div>
