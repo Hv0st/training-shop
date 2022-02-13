@@ -1,5 +1,4 @@
 import s from './Mainsreen.module.scss';
-import { Link } from 'react-router-dom'
 import Features from '../features/Features';
 import img from './assets/img/product-img-1.jpg';
 import imgWomen from './assets/img/product-women-img.jpg';
@@ -16,6 +15,12 @@ function Mainscreen() {
                         <div className={`${s.mainscreenBanner} ${s.mainscreenBannerBig}`}>
                             <span className={s.mainscreenBannerSubtitle}>banner</span>
                             <h2 className={`${s.mainscreenBannerTitle} ${s.mainscreenBannerTitleBig}`}>your Title text </h2>
+                        </div>
+                        <div className={s.arrows}>
+                            <div className={s.arrowLeft}>
+                            </div>
+                            <div className={s.arrowRight}>
+                            </div>
                         </div>
                     </div>
                     <div className={s.mainscreenImgWrapper}>

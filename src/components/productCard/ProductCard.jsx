@@ -37,13 +37,28 @@ function ProductCard() {
                 </div>
                 <div className={s.productCardWrapper}>
                     <div className={s.productCardLeft}>
+                        <div className={s.CardLeftArrows}>
+                            <div className={s.CardLeftArrowLeft}>
+                            </div>
+                            <div className={s.CardLeftArrowRight}>
+                            </div>
+                        </div>
                         <img className={s.productCardLeftImg} src={leftImg1} alt="" />
                         <img className={s.productCardLeftImg} src={leftImg2} alt="" />
                         <img className={s.productCardLeftImg} src={leftImg3} alt="" />
                         <img className={s.productCardLeftImg} src={leftImg4} alt="" />
                     </div>
                     <div className={s.productCardMedium}>
+                        <div className={s.productCardMediumImgWrapper}>
                         <img className={s.productCardMediumImg} src={mainImg} alt="" />
+                            <div className={s.CardMediumArrows}>
+                                <div className={s.CardMediumArrowLeft}>
+                                </div>
+                                <div className={s.CardMediumArrowRight}>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div className={s.productCardRight}>
                         <div className={s.colorSize}>
@@ -111,21 +126,21 @@ function ProductCard() {
                         <div className={s.reviews}>
                             <h4 className={s.reviewsTitle}>reviews</h4>
                             <div className={s.reviewsIntro}>
-                                <Rating size="16px"/>
+                                <Rating size="16px" />
                                 <span >Write a review</span>
                             </div>
                             <div className={s.feedbacks}>
                                 <div className={s.feedback}>
                                     <div className={s.feddbackIntro}>
                                         <span className={s.userName}>Oleh Chabanov</span>
-                                        <Rating size="10px"/>
+                                        <Rating size="10px" />
                                     </div>
                                     <p className={s.feedbackText}>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
                                 </div>
                                 <div className={s.feedback}>
                                     <div className={s.feddbackIntro}>
                                         <span className={s.userName}>ShAmAn design</span>
-                                        <Rating size="10px"/>
+                                        <Rating size="10px" />
                                     </div>
                                     <p className={s.feedbackText}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
                                 </div>

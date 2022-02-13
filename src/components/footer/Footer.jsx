@@ -65,7 +65,7 @@ function Footer() {
                                     <Link to="/men" className={s.footerLink} data-test-id='footer-nav-link-men'>Men</Link>
                                 </li>
                                 <li className={s.footerItem}>
-                                    <Link to='/women' className={s.footerLink} data-test-id='footer-nav-link-woomen'>Women</Link>
+                                    <Link to='/women' className={s.footerLink} data-test-id='footer-nav-link-women'>Women</Link>
                                 </li>
                                 <li className={s.footerItem}>
                                     <Link to='/accessories' className={s.footerLink} data-test-id='footer-nav-link-accessories'>Accessories</Link>

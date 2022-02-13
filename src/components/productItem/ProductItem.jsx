@@ -6,8 +6,9 @@ import Rating from '../rating/Rating';
 function ProductItem(props) {
     return (
         <>
-            <div className={s.product}>
+            <div className={s.product} data-test-id={`${props.data}`}>
                 <div className={s.productImgWrap}>
+                    <Link className={s.productLink} to={props.path}></Link>
                     <img className={s.productImg} src={props.img} alt="" />
                     <h3 className={s.productTitle}>{props.title}</h3>
                     {props.isSale
@@ -18,7 +19,7 @@ function ProductItem(props) {
                             <span className={s.productSalesPercent}></span>
                         </div>
                     }
-                    <Link to={`/product`} className={s.productLink}></Link>
+
                 </div>
                 <div className={s.productPriceWrap}>
                     <div className={s.productPriceInner}>
@@ -30,7 +31,7 @@ function ProductItem(props) {
 
                     </div>
 
-                    <Rating size="10px"/>
+                    <Rating size="10px" />
 
                 </div>
             </div>

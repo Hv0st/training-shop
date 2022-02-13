@@ -1,8 +1,7 @@
-.productCard {
 
-}
 
 .container {
+    padding-top: 30px;
     max-width: 1100px;
     margin: 0 auto;
 
@@ -41,6 +40,8 @@
 }
 
 .productCardLeft {
+    padding-top: 45px;
+    position: relative;
     @media screen and (max-width: 576px) {
         padding-top: 10px;
         margin: 0 auto;
@@ -57,7 +58,81 @@
     }
 }
 
+.CardLeftArrows {
+    position: relative;
+    top: -47px;
+}
+
+.CardLeftArrowLeft {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    top: 50%;
+    left: 5%;
+    background-color: white;
+
+}
+
+.CardLeftArrowLeft::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 15px;
+    left: 10px;
+    background: black;
+    transform: rotate(315deg);
+}
+
+.CardLeftArrowLeft::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 15px;
+    left: 18px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+ 
+.CardLeftArrowRight {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    top: 50%;
+    right: 5%;
+    background-color: white;
+}
+
+.CardLeftArrowRight::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 20px;
+    left: 18px;
+    background: black;
+    transform: rotate(135deg);
+}
+
+.CardLeftArrowRight::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 21px;
+    left: 10px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+
 .productCardLeftImg {
+
+
     @media screen and (max-width: 576px) {
         max-width: 60px;
     }
@@ -81,10 +156,84 @@
     }
 }
 
+.productCardMediumImgWrapper {
+    position: relative;
+}
+
 .productCardMediumImg {
     @media screen and (max-width: 576px) {
         max-width: 320px;
     }
+}
+
+.CardMediumArrows {
+
+}
+
+.CardMediumArrowLeft {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    left: 5%;
+    top: 50%;
+    background-color: white;
+
+}
+
+.CardMediumArrowLeft::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 15px;
+    left: 10px;
+    background: black;
+    transform: rotate(315deg);
+}
+
+.CardMediumArrowLeft::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 23px;
+    left: 11px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+ 
+.CardMediumArrowRight {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 10%;
+    top: 50%;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.CardMediumArrowRight::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 20px;
+    left: 18px;
+    background: black;
+    transform: rotate(135deg);
+}
+
+.CardMediumArrowRight::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 11px;
+    top: 13px;
+    left: 18px;
+    background: black;
+    transform: rotate(45deg);
 }
 
 .productCardRight {

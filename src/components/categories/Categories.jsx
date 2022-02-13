@@ -26,36 +26,36 @@ function Categories() {
     return (
         <div className={s.categories}>
             <div className={s.categoriesContainer}>
-                <div className={s.categoriesItem}>
+                <div className={s.categoriesItem} data-test-id="clothes-women">
                     <div className={s.catigoriesHeader}>
                         <h2 className={s.categoriesTitle}>women's</h2>
                         <Breadcrump />
                     </div>
                     <div className={s.categoriesList}>
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg1} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="$ 60.00" img={productImg2} isSale="true" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg3} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg4} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg5} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg6} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg7} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg8} isSale="" />
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg1} isSale="" path="/women/1" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="$ 60.00" img={productImg2} isSale="true" path="/women/2" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg3} isSale="" path="/women/3" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg4} isSale="" path="/women/4" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg5} isSale="" path="/women/5" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg6} isSale="" path="/women/6" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg7} isSale="" path="/women/7" data="clothes-card-women"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg8} isSale="" path="/women/8" data="clothes-card-women"/>
                     </div>
                 </div>
-                <div className={s.categoriesItem}>
+                <div className={s.categoriesItem} data-test-id="clothes-men">
                     <div className={s.catigoriesHeader}>
                         <h2 className={s.categoriesTitle}>men's</h2>
                         <Breadcrump />
                     </div>
                     <div className={s.categoriesList}>
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg9} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg10} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg11} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg12} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg13} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg14} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg15} isSale="" />
-                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg16} isSale="" />
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg9} isSale="" path="/men/1" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg10} isSale="" path="/men/2" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg11} isSale="" path="/men/3" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg12} isSale="" path="/men/4" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg13} isSale="" path="/men/5" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg14} isSale="" path="/men/6" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg15} isSale="" path="/men/7" data="clothes-card-men"/>
+                        <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg16} isSale="" path="/men/8" data="clothes-card-men"/>
                     </div>
                 </div>
             </div>
