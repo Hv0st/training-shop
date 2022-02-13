@@ -14,7 +14,7 @@ import productImg8 from '../../components/categories/assets/img/products-men-8.j
 export const Men = () => {
   return (
     <div className={s.men} data-test-id="products-page-men">
-      <Share />
+      <Share title="Men" />
       <div className={s.container}>
         <Filter />
         <div className={s.productItems}>

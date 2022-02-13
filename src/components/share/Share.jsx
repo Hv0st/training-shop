@@ -20,12 +20,8 @@ function Share() {
                             <span className={s.sharText}>Share</span>
                         </div>
                     </div>
-                    <div className={s.bottom}>
-                        <h2 className={s.shareTitle}>Women</h2>
-                    </div>
                 </div>
             </div>
-
         </div>
     );
 }

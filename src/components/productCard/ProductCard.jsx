@@ -1,6 +1,7 @@
 import s from './ProductCard.module.scss';
 import Share from '../share/Share';
 import Rating from '../rating/Rating';
+import ProductNarrative from '../productNarrative/ProuctNarrative';
 import leftImg1 from './assets/img/product-img-left-1.jpg';
 import leftImg2 from './assets/img/product-img-left-2.jpg';
 import leftImg3 from './assets/img/product-img-left-3.jpg';
@@ -29,7 +30,9 @@ function ProductCard() {
     return (
         <div>
             <Share />
+            <ProductNarrative />
             <div className={s.container}>
+
                 <div className={s.productHeader}>
                 </div>
                 <div className={s.productCardWrapper}>

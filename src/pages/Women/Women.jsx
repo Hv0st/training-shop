@@ -14,7 +14,7 @@ import productImg8 from '../../components/categories/assets/img/products-women-8
 export const Women = () => {
   return (
     <div className={s.women} data-test-id="products-page-women">
-      <Share />
+      <Share title="Women"/>
       <div className={s.container}>
         <Filter />
         <div className={s.productItems}>
