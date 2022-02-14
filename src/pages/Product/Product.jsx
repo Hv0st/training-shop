@@ -16,10 +16,10 @@ function Product() {
             <h2 className={s.relatedProductsHeaderTitle}>related products</h2>
           </div>
           <div className={s.relatedProductsItems}>
-            <ProductItem title="Women's tracksuit Q109" img={ProductItemImg} newPrice="$30.00" oldPrice="" isSale="" />
-            <ProductItem title="Women's tracksuit Q109" img={ProductItemImg2} newPrice="$30.00" oldPrice="" isSale="true" />
-            <ProductItem title="Women's tracksuit Q109" img={ProductItemImg3} newPrice="$30.00" oldPrice="" isSale="" />
-            <ProductItem title="Women's tracksuit Q109" img={ProductItemImg4} newPrice="$30.00" oldPrice="" isSale="" />
+            <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={ProductItemImg} isSale="" path="/women/1" data="clothes-card-women" />
+            <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="$ 60.00" img={ProductItemImg2} isSale="" path="/women/2" data="clothes-card-women" />
+            <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={ProductItemImg3} isSale="" path="/women/3" data="clothes-card-women" />
+            <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={ProductItemImg4} isSale="" path="/women/4" data="clothes-card-women" />
           </div>
         </div>
       </div>
