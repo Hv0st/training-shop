@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.534be929.css",
-    "main.js": "/training-shop/static/js/main.9e1ddf94.js",
+    "main.css": "/training-shop/static/css/main.312505d5.css",
+    "main.js": "/training-shop/static/js/main.5cadf281.js",
     "static/media/girl.png": "/training-shop/static/media/girl.4152b783e591f01bafb6.png",
     "static/media/product-img-1.jpg": "/training-shop/static/media/product-img-1.ba5d4eb3d9420781b5f8.jpg",
     "static/media/blog-img-1.jpg": "/training-shop/static/media/blog-img-1.5cad0183f33abe4f2f35.jpg",
@@ -11,12 +11,8 @@
     "static/media/product-accessories-img.jpg": "/training-shop/static/media/product-accessories-img.ee7f09dd43e5a9912d95.jpg",
     "static/media/products-women-5.jpg": "/training-shop/static/media/products-women-5.363e0e8c20844e94187f.jpg",
     "static/media/promo-img-2.jpg": "/training-shop/static/media/promo-img-2.6b1e286dc702ba60be57.jpg",
-    "static/media/related-img-1.jpg": "/training-shop/static/media/related-img-1.7472a839b6c5d7ed227c.jpg",
     "static/media/blog-img-3.jpg": "/training-shop/static/media/blog-img-3.5f7ce6ec287630e86bf9.jpg",
-    "static/media/related-img-3.jpg": "/training-shop/static/media/related-img-3.b60f6932598e066e266e.jpg",
     "static/media/promo-img-1.jpg": "/training-shop/static/media/promo-img-1.50c6caf0e00920727596.jpg",
-    "static/media/related-img-2.jpg": "/training-shop/static/media/related-img-2.eb178076f9fffbe5ebf2.jpg",
-    "static/media/related-img-4.jpg": "/training-shop/static/media/related-img-4.746180237ae3cebb8197.jpg",
     "static/media/products-men-3.jpg": "/training-shop/static/media/products-men-3.8854617b0951c08b172e.jpg",
     "static/media/Spartan-SemiBold.woff2": "/training-shop/static/media/Spartan-SemiBold.1797015a162c2c6a07a5.woff2",
     "static/media/Spartan-Regular.woff2": "/training-shop/static/media/Spartan-Regular.7e77e27242b5ec28621b.woff2",
@@ -69,11 +65,11 @@
     "static/media/scales-icon.svg": "/training-shop/static/media/scales-icon.3b621aec2a61da5155deff199417102f.svg",
     "static/media/cart-icon.svg": "/training-shop/static/media/cart-icon.f83a75a7371832b4fcec9fd8fd5f6474.svg",
     "static/media/view-list.svg": "/training-shop/static/media/view-list.44db9bee8523b700cc8144da2caaed0d.svg",
-    "main.534be929.css.map": "/training-shop/static/css/main.534be929.css.map",
-    "main.9e1ddf94.js.map": "/training-shop/static/js/main.9e1ddf94.js.map"
+    "main.312505d5.css.map": "/training-shop/static/css/main.312505d5.css.map",
+    "main.5cadf281.js.map": "/training-shop/static/js/main.5cadf281.js.map"
   },
   "entrypoints": [
-    "static/css/main.534be929.css",
-    "static/js/main.9e1ddf94.js"
+    "static/css/main.312505d5.css",
+    "static/js/main.5cadf281.js"
   ]
 }
