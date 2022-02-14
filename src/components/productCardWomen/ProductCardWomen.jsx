@@ -1,4 +1,4 @@
-import s from './ProductCard.module.scss';
+import s from './ProductCardWomen.module.scss';
 import Share from '../share/Share';
 import Rating from '../rating/Rating';
 import ProductNarrative from '../productNarrative/ProuctNarrative';
@@ -28,7 +28,7 @@ import expressImg from './assets/img/american-express.png';
 
 function ProductCard() {
     return (
-        <div>
+        <div data-test-id="product-page-women">
             <Share />
             <ProductNarrative />
             <div className={s.container}>

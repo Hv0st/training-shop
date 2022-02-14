@@ -1,5 +1,5 @@
 import s from './Product.module.scss';
-import ProductCard from '../.././components/productCard/ProductCard';
+import ProductCard from '../../components/productCard/ProductCardMen';
 import ProductItem from '../../components/productItem/ProductItem';
 import ProductItemImg from './assets/img/related-img-1.jpg';
 import ProductItemImg2 from './assets/img/related-img-2.jpg';
