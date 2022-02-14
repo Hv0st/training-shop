@@ -1,6 +1,7 @@
 import s from './Men.module.scss';
 import Filter from '../../components/filter/Filter';
 import Share from '../../components/share/Share';
+import Title from '../../components/titleProductPage/TitleProductPage'
 import ProductItem from '../../components/productItem/ProductItem';
 import productImg1 from '../../components/categories/assets/img/products-men-1.jpg';
 import productImg2 from '../../components/categories/assets/img/products-men-2.jpg';
@@ -15,6 +16,7 @@ export const Men = () => {
   return (
     <div className={s.men} data-test-id="products-page-men">
       <Share title="Men" />
+      <Title title="men"/>
       <div className={s.container}>
         <Filter />
         <div className={s.productItems}>
