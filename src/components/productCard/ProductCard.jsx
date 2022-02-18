@@ -1,4 +1,4 @@
-import s from './ProductCardWomen.module.scss';
+import s from './ProductCard.module.scss';
 import Share from '../share/Share';
 import Rating from '../rating/Rating';
 import ProductNarrative from '../productNarrative/ProuctNarrative';
@@ -26,9 +26,9 @@ import discoverImg from './assets/img/discover.png';
 import expressImg from './assets/img/american-express.png';
 
 
-function ProductCard() {
+function ProductCard(props) {
     return (
-        <div data-test-id="product-page-women">
+        <div data-test-id={`product-page-${props.categor}`}>
             <Share />
             <ProductNarrative />
             <div className={s.container}>
