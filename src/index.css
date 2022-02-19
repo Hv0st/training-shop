@@ -36,3 +36,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #121212 !important;
+    font-size: 20px !important;
+}

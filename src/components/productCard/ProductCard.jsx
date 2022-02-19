@@ -1,5 +1,9 @@
 import s from './ProductCard.module.scss';
 import Share from '../share/Share';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from "swiper";
+import "swiper/css/bundle";
+import "swiper/scss/navigation";
 import Rating from '../rating/Rating';
 import ProductNarrative from '../productNarrative/ProuctNarrative';
 import RelatedProducts from '../relatedProducts/RelatedProducts';
@@ -50,15 +54,53 @@ function ProductCard(props) {
                         <img className={s.productCardLeftImg} src={leftImg4} alt="" />
                     </div>
                     <div className={s.productCardMedium}>
-                        <div className={s.productCardMediumImgWrapper}>
-                        <img className={s.productCardMediumImg} src={mainImg} alt="" />
-                            {/* <div className={s.CardMediumArrows}>
+                        <Swiper navigation={true} slidesPerView={1} modules={[Navigation]} className="mySwiper">
+                            <SwiperSlide>
+                                <div className={s.productCardMediumImgWrapper}>
+                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
+                                    {/* <div className={s.CardMediumArrows}>
                                 <div className={s.CardMediumArrowLeft}>
                                 </div>
                                 <div className={s.CardMediumArrowRight}>
                                 </div>
                             </div> */}
-                        </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className={s.productCardMediumImgWrapper}>
+                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
+                                    {/* <div className={s.CardMediumArrows}>
+                                <div className={s.CardMediumArrowLeft}>
+                                </div>
+                                <div className={s.CardMediumArrowRight}>
+                                </div>
+                            </div> */}
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className={s.productCardMediumImgWrapper}>
+                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
+                                    {/* <div className={s.CardMediumArrows}>
+                                <div className={s.CardMediumArrowLeft}>
+                                </div>
+                                <div className={s.CardMediumArrowRight}>
+                                </div>
+                            </div> */}
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className={s.productCardMediumImgWrapper}>
+                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
+                                    {/* <div className={s.CardMediumArrows}>
+                                <div className={s.CardMediumArrowLeft}>
+                                </div>
+                                <div className={s.CardMediumArrowRight}>
+                                </div>
+                            </div> */}
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+
 
                     </div>
                     <div className={s.productCardRight}>

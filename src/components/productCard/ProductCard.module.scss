@@ -148,6 +148,7 @@
 }
 
 .productCardMedium {
+    max-width: 450px;
     @media screen and (max-width: 576px) {
         grid-column-start: 1;
         grid-column-end: 2;
