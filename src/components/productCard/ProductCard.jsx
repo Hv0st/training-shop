@@ -1,4 +1,5 @@
 import s from './ProductCard.module.scss';
+
 import Share from '../share/Share';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
@@ -7,10 +8,7 @@ import "swiper/scss/navigation";
 import Rating from '../rating/Rating';
 import ProductNarrative from '../productNarrative/ProuctNarrative';
 import RelatedProducts from '../relatedProducts/RelatedProducts';
-import leftImg1 from './assets/img/product-img-left-1.jpg';
-import leftImg2 from './assets/img/product-img-left-2.jpg';
-import leftImg3 from './assets/img/product-img-left-3.jpg';
-import leftImg4 from './assets/img/product-img-left-4.jpg';
+import SliderLeft from '../sliderLeft/SliderLeft';
 import mainImg from './assets/img/main-img.jpg';
 import rightImg1 from './assets/img/product-color-img-1.jpg';
 import rightImg2 from './assets/img/product-color-img-2.jpg';
@@ -41,18 +39,7 @@ function ProductCard(props) {
                 <div className={s.productHeader}>
                 </div>
                 <div className={s.productCardWrapper}>
-                    <div className={s.productCardLeft}>
-                        <div className={s.CardLeftArrows}>
-                            <div className={s.CardLeftArrowLeft}>
-                            </div>
-                            <div className={s.CardLeftArrowRight}>
-                            </div>
-                        </div>
-                        <img className={s.productCardLeftImg} src={leftImg1} alt="" />
-                        <img className={s.productCardLeftImg} src={leftImg2} alt="" />
-                        <img className={s.productCardLeftImg} src={leftImg3} alt="" />
-                        <img className={s.productCardLeftImg} src={leftImg4} alt="" />
-                    </div>
+                    <SliderLeft />
                     <div className={s.productCardMedium}>
                         <Swiper navigation={true} slidesPerView={1} modules={[Navigation]} className="mySwiper">
                             <SwiperSlide>
@@ -100,8 +87,6 @@ function ProductCard(props) {
                                 </div>
                             </SwiperSlide>
                         </Swiper>
-
-
                     </div>
                     <div className={s.productCardRight}>
                         <div className={s.colorSize}>
