@@ -1,14 +1,12 @@
-import s from './ProductCard.module.scss';
-
+import s from './ProductCard.scss';
 import Share from '../share/Share';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper";
-import "swiper/css/bundle";
-import "swiper/scss/navigation";
+import { Navigation, Controller } from "swiper";
+// import "swiper/css/bundle";
+// import "swiper/scss/navigation";
 import Rating from '../rating/Rating';
 import ProductNarrative from '../productNarrative/ProuctNarrative';
 import RelatedProducts from '../relatedProducts/RelatedProducts';
-import SliderLeft from '../sliderLeft/SliderLeft';
 import mainImg from './assets/img/main-img.jpg';
 import rightImg1 from './assets/img/product-color-img-1.jpg';
 import rightImg2 from './assets/img/product-color-img-2.jpg';
@@ -27,150 +25,142 @@ import visaImg from './assets/img/visa.png';
 import mastercardImg from './assets/img/mastercard.png';
 import discoverImg from './assets/img/discover.png';
 import expressImg from './assets/img/american-express.png';
+import { useState } from 'react';
 
+import leftImg1 from './assets/img/product-img-left-1.jpg';
+// navigation={{ prevEl: '.swiperLeft-button-prev', nextEl: '.swiperLeft-button-next' }}
 
 function ProductCard(props) {
+    const [firstSwiper, setFirstSwiper] = useState(null);
+    const [secondSwiper, setSecondSwiper] = useState(null)
     return (
         <div data-test-id={`product-page-${props.categor}`}>
             <Share />
             <ProductNarrative />
-            <div className={s.container}>
-
-                <div className={s.productHeader}>
+            <div className='container'>
+                <div className="productHeader">
                 </div>
-                <div className={s.productCardWrapper}>
-                    <SliderLeft />
-                    <div className={s.productCardMedium}>
-                        <Swiper navigation={true} slidesPerView={1} modules={[Navigation]} className="mySwiper">
+                <div className="productCardWrapper">
+                    <div className="slider__wrapper">
+                        <div className="swiperLeft-button-prev"></div>
+                        <div className="swiperLeft-button-next"></div>
+                        <Swiper  direction={"vertical"} slidesPerView={4} modules={[Navigation, Controller]} onSwiper={setFirstSwiper} controller={{ control: secondSwiper }} className="swiperLeft">
+                            <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>
+                            <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>
+                            <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>
+                            <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
+                        </Swiper>
+                    </div>
+                    <div className="productCardMedium">
+                        <Swiper navigation={true} slidesPerView={1} modules={[Controller, Navigation]} onSwiper={setSecondSwiper} controller={{ control: firstSwiper }} className="mySwiper">
                             <SwiperSlide>
-                                <div className={s.productCardMediumImgWrapper}>
-                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
-                                    {/* <div className={s.CardMediumArrows}>
-                                <div className={s.CardMediumArrowLeft}>
-                                </div>
-                                <div className={s.CardMediumArrowRight}>
-                                </div>
-                            </div> */}
+                                <div className="productCardMediumImgWrapper">
+                                    <img className="productCardMediumImg" src={mainImg} alt="" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className={s.productCardMediumImgWrapper}>
-                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
-                                    {/* <div className={s.CardMediumArrows}>
-                                <div className={s.CardMediumArrowLeft}>
-                                </div>
-                                <div className={s.CardMediumArrowRight}>
-                                </div>
-                            </div> */}
+                                <div className="productCardMediumImgWrapper">
+                                    <img className='productCardMediumImg' src={mainImg} alt="" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className={s.productCardMediumImgWrapper}>
-                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
-                                    {/* <div className={s.CardMediumArrows}>
-                                <div className={s.CardMediumArrowLeft}>
-                                </div>
-                                <div className={s.CardMediumArrowRight}>
-                                </div>
-                            </div> */}
+                                <div className="productCardMediumImgWrapper">
+                                    <img className='productCardMediumImg' src={mainImg} alt="" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className={s.productCardMediumImgWrapper}>
-                                    <img className={s.productCardMediumImg} src={mainImg} alt="" />
-                                    {/* <div className={s.CardMediumArrows}>
-                                <div className={s.CardMediumArrowLeft}>
-                                </div>
-                                <div className={s.CardMediumArrowRight}>
-                                </div>
-                            </div> */}
+                                <div className="productCardMediumImgWrapper">
+                                    <img className='productCardMediumImg' src={mainImg} alt="" />
                                 </div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div className={s.productCardRight}>
-                        <div className={s.colorSize}>
-                            <div className={s.color}>
-                                <p className={s.colorText}>color<span className={s.colorTextSpan}>Blue</span></p>
-                                <div className={s.colorImages}>
-                                    <img className={s.colorImg} src={rightImg1} alt="" />
-                                    <img className={s.colorImg} src={rightImg2} alt="" />
-                                    <img className={s.colorImg} src={rightImg3} alt="" />
-                                    <img className={s.colorImg} src={rightImg4} alt="" />
+                    <div className='productCardRight'>
+                        <div className='colorSize'>
+                            <div className='color'>
+                                <p className='colorText'>color<span className='colorTextSpan'>Blue</span></p>
+                                <div className='colorImages'>
+                                    <img className='colorImg' src={rightImg1} alt="" />
+                                    <img className='colorImg' src={rightImg2} alt="" />
+                                    <img className='colorImg' src={rightImg3} alt="" />
+                                    <img className='colorImg' src={rightImg4} alt="" />
                                 </div>
                             </div>
-                            <div className={s.size}>
-                                <p className={s.colorText}>size<span className={s.colorTextSpan}>s</span></p>
-                                <div className={s.sizeBtns}>
-                                    <button className={s.sizeBtn}>XS</button>
-                                    <button className={s.sizeBtn}>S</button>
-                                    <button className={s.sizeBtn}>M</button>
-                                    <button className={s.sizeBtn}>L</button>
+                            <div className='size'>
+                                <p className='colorText'>size<span className='colorTextSpan'>s</span></p>
+                                <div className='sizeBtns'>
+                                    <button className='sizeBtn'>XS</button>
+                                    <button className='sizeBtn'>S</button>
+                                    <button className='sizeBtn'>M</button>
+                                    <button className='sizeBtn'>L</button>
                                 </div>
-                                <div className={s.sizeGuide}>
-                                    <img className={s.sizeGuideImg} src={sizeGuideImg} alt="" />
-                                    <span className={s.sizeGuideText}>Size guide</span>
+                                <div className='sizeGuide'>
+                                    <img className='sizeGuideImg' src={sizeGuideImg} alt="" />
+                                    <span className='sizeGuideText'>Size guide</span>
                                 </div>
                             </div>
                         </div>
-                        <div className={s.priceWrap}>
-                            <span className={s.price}>$ 379.99</span>
-                            <button className={s.priceBtn}>add to card</button>
-                            <img className={s.priceIcon} src={heartIcon} alt="" />
-                            <img className={s.priceIcon} src={scalesIcon} alt="" />
+                        <div className='priceWrap'>
+                            <span className='price'>$ 379.99</span>
+                            <button className='priceBtn'>add to card</button>
+                            <img className='priceIcon' src={heartIcon} alt="" />
+                            <img className='priceIcon' src={scalesIcon} alt="" />
                         </div>
-                        <div className={s.features}>
-                            <div className={s.featuresItem}>
+                        <div className='features'>
+                            <div className='featuresItem'>
                                 <img src={shipIcon} alt="" />
-                                <span className={s.featuresItemText}>Shipping & Delivery</span>
+                                <span className='featuresItemText'>Shipping & Delivery</span>
                             </div>
-                            <div className={s.featuresItem}>
+                            <div className='featuresItem'>
                                 <img src={returnIcon} alt="" />
-                                <span className={s.featuresItemText}>Returns & Exchanges</span>
+                                <span className='featuresItemText'>Returns & Exchanges</span>
                             </div>
-                            <div className={s.featuresItem}>
+                            <div className='featuresItem'>
                                 <img src={emailIcon} alt="" />
-                                <span className={s.featuresItemText}>Ask a question</span>
+                                <span className='featuresItemText'>Ask a question</span>
                             </div>
                         </div>
-                        <div className={s.pay}>
-                            <img className={s.payImg} src={stripeImg} alt="" />
-                            <img className={s.payImg} src={aesImg} alt="" />
-                            <img className={s.payImg} src={palImg} alt="" />
-                            <img className={s.payImg} src={visaImg} alt="" />
-                            <img className={s.payImg} src={mastercardImg} alt="" />
-                            <img className={s.payImg} src={discoverImg} alt="" />
-                            <img className={s.payImg} src={expressImg} alt="" />
+                        <div className='pay'>
+                            <img className='payImg' src={stripeImg} alt="" />
+                            <img className='payImg' src={aesImg} alt="" />
+                            <img className='payImg' src={palImg} alt="" />
+                            <img className='payImg' src={visaImg} alt="" />
+                            <img className='payImg' src={mastercardImg} alt="" />
+                            <img className='payImg' src={discoverImg} alt="" />
+                            <img className='payImg' src={expressImg} alt="" />
                         </div>
-                        <div className={s.descript}>
-                            <span className={s.desriptText}>description</span>
+                        <div className='descript'>
+                            <span className='desriptText'>description</span>
                         </div>
-                        <div className={s.info}>
-                            <h4 className={s.infoTitle}>Additional information</h4>
-                            <p className={s.infoText}><span className={s.infoTextSpan}>Color:</span>Blue, White, Black, Grey</p>
-                            <p className={s.infoText}><span className={s.infoTextSpan}>Size:</span>XS, S, M, L</p>
-                            <p className={s.infoText}><span className={s.infoTextSpan}>Material:</span>100% Polyester</p>
+                        <div className='info'>
+                            <h4 className='infoTitle'>Additional information</h4>
+                            <p className='infoText'><span className={s.infoTextSpan}>Color:</span>Blue, White, Black, Grey</p>
+                            <p className='infoText'><span className={s.infoTextSpan}>Size:</span>XS, S, M, L</p>
+                            <p className='infoText'><span className={s.infoTextSpan}>Material:</span>100% Polyester</p>
                         </div>
-                        <div className={s.reviews}>
-                            <h4 className={s.reviewsTitle}>reviews</h4>
-                            <div className={s.reviewsIntro}>
+                        <div className='reviews'>
+                            <h4 className='reviewsTitle'>reviews</h4>
+                            <div className='reviewsIntro'>
                                 <Rating size="16px" />
                                 <span >Write a review</span>
                             </div>
-                            <div className={s.feedbacks}>
-                                <div className={s.feedback}>
-                                    <div className={s.feddbackIntro}>
-                                        <span className={s.userName}>Oleh Chabanov</span>
+                            <div className='feedbacks'>
+                                <div className='feedback'>
+                                    <div className='feddbackIntro'>
+                                        <span className='userName'>Oleh Chabanov</span>
                                         <Rating size="10px" />
                                     </div>
-                                    <p className={s.feedbackText}>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
+                                    <p className='feedbackText'>On the other hand, we denounce with righteous indignation and like men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
                                 </div>
-                                <div className={s.feedback}>
-                                    <div className={s.feddbackIntro}>
-                                        <span className={s.userName}>ShAmAn design</span>
+                                <div className='feedback'>
+                                    <div className='feddbackIntro'>
+                                        <span className='userName'>ShAmAn design</span>
                                         <Rating size="10px" />
                                     </div>
-                                    <p className={s.feedbackText}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+                                    <p className='feedbackText'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
                                 </div>
                             </div>
                         </div>

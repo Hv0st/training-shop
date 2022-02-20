@@ -15,7 +15,7 @@ function Mainscreen() {
             <div className={s.container}>
                 <div className={s.mainscreenImgs}>
                     <div className={s.mainscreenImgWrapper}>
-                        <Swiper navigation={true} slidesPerView={1} modules={[Navigation]} className="mySwiper">
+                        <Swiper navigation={true} slidesPerView={1} modules={[Navigation]} className="mySwiper" data-test-id='main-slider'>
                             <SwiperSlide className={s.swiperSlide}>
                                 <img className={s.mainscreenImg} src={img} alt="" />
                                 <div className={`${s.mainscreenBanner} ${s.mainscreenBannerBig}`}>
