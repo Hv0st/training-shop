@@ -14,7 +14,29 @@ function RelatedProducts() {
             <div className={s.container}>
                 <div class="swiper-buttonPrev"></div>
                 <div class="swiper-buttonNext"></div>
-                    <Swiper navigation={{ prevEl: '.swiper-buttonPrev', nextEl: '.swiper-buttonNext'}} slidesPerView={4} spaceBetween={30} modules={[Navigation]} className="mySwiper">
+                    <Swiper navigation={{ prevEl: '.swiper-buttonPrev', nextEl: '.swiper-buttonNext'}}
+                    slidesPerView={4}
+                    spaceBetween={30}
+                    modules={[Navigation]}
+                    breakpoints={{
+                        1110: {
+                            slidesPerView: 4
+                        },
+
+                        830: {
+                            slidesPerView: 3
+                        },
+
+                        600: {
+                            slidesPerView: 2
+                        },
+                        
+                        360: {
+                            slidesPerView: 1
+                        }
+
+                    }}
+                    className="mySwiper">
                         <SwiperSlide >
                             <ProductItem title="Women's tracksuit Q109" newPrice="$30.00" oldPrice="" img={productImg1} isSale="" path="/women/1" data="clothes-card-women" />
                         </SwiperSlide>

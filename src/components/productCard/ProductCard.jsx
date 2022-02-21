@@ -44,7 +44,14 @@ function ProductCard(props) {
                     <div className="slider__wrapper">
                         <div className="swiperLeft-button-prev"></div>
                         <div className="swiperLeft-button-next"></div>
-                        <Swiper  direction={"vertical"} slidesPerView={4} modules={[Navigation, Controller]} onSwiper={setFirstSwiper} controller={{ control: secondSwiper }} className="swiperLeft">
+                        <Swiper 
+                        navigation={{ prevEl: '.swiperLeft-button-prev', nextEl: '.swiperLeft-button-next' }}  
+                        direction={"vertical"} 
+                        slidesPerView={4} 
+                        modules={[Navigation, Controller]} 
+                        onSwiper={setFirstSwiper} 
+                        controller={{ control: secondSwiper }}
+                        className="swiperLeft">
                             <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>
                             <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>
                             <SwiperSlide><img className="slider__img" src={leftImg1} alt="" /></SwiperSlide>

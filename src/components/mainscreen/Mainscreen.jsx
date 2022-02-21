@@ -22,12 +22,6 @@ function Mainscreen() {
                                     <span className={s.mainscreenBannerSubtitle}>banner</span>
                                     <h2 className={`${s.mainscreenBannerTitle} ${s.mainscreenBannerTitleBig}`}>your Title text </h2>
                                 </div>
-                                {/* <div className={s.arrows}>
-                                    <div className={s.arrowLeft}>
-                                    </div>
-                                    <div className={s.arrowRight}>
-                                    </div>
-                                </div> */}
                             </SwiperSlide>
                             <SwiperSlide className={s.swiperSlide}>
                                 <img className={s.mainscreenImg} src={img} alt="" />
@@ -35,12 +29,6 @@ function Mainscreen() {
                                     <span className={s.mainscreenBannerSubtitle}>banner</span>
                                     <h2 className={`${s.mainscreenBannerTitle} ${s.mainscreenBannerTitleBig}`}>your Title text </h2>
                                 </div>
-                                {/* <div className={s.arrows}>
-                                    <div className={s.arrowLeft}>
-                                    </div>
-                                    <div className={s.arrowRight}>
-                                    </div>
-                                </div> */}
                             </SwiperSlide>
                             <SwiperSlide className={s.swiperSlide}>
                                 <img className={s.mainscreenImg} src={img} alt="" />
@@ -48,12 +36,6 @@ function Mainscreen() {
                                     <span className={s.mainscreenBannerSubtitle}>banner</span>
                                     <h2 className={`${s.mainscreenBannerTitle} ${s.mainscreenBannerTitleBig}`}>your Title text </h2>
                                 </div>
-                                {/* <div className={s.arrows}>
-                                    <div className={s.arrowLeft}>
-                                    </div>
-                                    <div className={s.arrowRight}>
-                                    </div>
-                                </div> */}
                             </SwiperSlide>
                         </Swiper>
                     </div>
